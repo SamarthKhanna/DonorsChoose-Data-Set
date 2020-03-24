@@ -2,11 +2,13 @@
 We explore various techniques to solve the donors choose problem
 <br> First we take a look at the kind of features we have and the changes that are required in them to make them more suitabel for our use.
 <br> After this we apply the necessary preprocessing steps which have been listed below.
-## Preprocessing
-### 1) Modification of labels:
-<pre> We need to remove the spaces, replace the '-' with '_' and convert all the letters to small. This is valid for features such as 'Project_grade_category', 'project_subject_categories', 'techer_prefix', 'project_subject_subcategories' and 'school_state' <\pre>
 
-### 2) Text preprocessing:
+## Preprocessing
+
+### 1) Modification of labels
+We remove the spaces, replace the '-' with '_' and convert all the letters to small. This is valid for features such as 'Project_grade_category', 'project_subject_categories', 'techer_prefix', 'project_subject_subcategories' and 'school_state' 
+
+### 2) Text preprocessing
 - Decontraction of words
 - Removal of links, HTML tags
 - Removal of any punctuations or limited set of special characters like , or . or # etc.
@@ -14,10 +16,10 @@ We explore various techniques to solve the donors choose problem
 - Converting the word to lowercase
 - Removing Stopwords
 
-### 3) Combining the various 'project_essay_?' features together:
+### 3) Combining the various 'project_essay_?' features together
 All these textual features were combined under a single feature 'project_essay'.
 
-### 4) Scaling of numerical feature:
+### 4) Scaling of numerical feature
 The numerical feature of price is scaled using MinMaxScaler
 
 ## Featurization
